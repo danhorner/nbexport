@@ -1,0 +1,25 @@
+[project]
+name = "nbexport"
+version = "2024.1.31"
+description = "A lightweight alternative to nbdev that only exports modules"
+readme = "README.md"
+dependencies = [
+  "nbconvert"
+]
+authors = [
+  {name = "Daniel Horner", email = "daniel_horner@pobox.com"}
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+nbexport = "nbexport:main"
+
+[tool.setuptools]
+packages = ["nbexport"]
+package-dir = {"" = "src"}
