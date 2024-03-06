@@ -5,6 +5,8 @@ There is some support for literate programming by weaving together multiple note
 
 This package is written in a notebook and which is then processed using `nbexport`
 
+**See Also**: The excellent [nbdev project](https://nbdev.fast.ai) by fast.ai which is a full book-authoring package along these lines. I didn't want to opt in to the the quarto documentation and the CI tooling. Rather, I like to work on smaller projects by writing a notebook and then diffing only the generated sources during code review.
+
 ### Usage: ###
 
 #### Command-line: ####
