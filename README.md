@@ -7,12 +7,23 @@ This package is written in a notebook and which is then processed using `nbexpor
 
 **See Also**: The excellent [nbdev project](https://nbdev.fast.ai) by fast.ai which is a full book-authoring package along these lines. I didn't want to opt in to the the quarto documentation and the CI tooling. Rather, I like to work on smaller projects by writing a notebook and then diffing only the generated sources during code review.
 
+### Install: ###
+```console
+$ pip install git+https://github.com/danhorner/nbexport
+```
+
+Or just clone the git repo and run directly:
+```console
+$ git clone https://github.com/danhorner/nbexport
+$ python nbexport/src/nbexport/nbexport.py <args>
+```
+
 ### Usage: ###
 
 #### Command-line: ####
 
 ```shell
-# Process a single file into the output directory
+# Process one or more files into the output directory
 $ nbexport -d src/nbexport nbs/01_NbExport.ipynb 
 ```
 
